@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22.157" height="26.293" viewBox="0 0 22.157 26.293">
-  <g id="Group_427" data-name="Group 427" transform="translate(14544 -11168.46)">
-    <path id="Subtraction_46" data-name="Subtraction 46" d="M19.055,28.753h-13a3.105,3.105,0,0,1-3.1-3.1v-.443A3.115,3.115,0,0,1,0,22.106V8.575a.7.7,0,0,1,.207-.5L5.5,2.7a.737.737,0,0,1,.531-.237h7.129A6,6,0,0,0,18,12a6.1,6.1,0,0,0,.612-.031V22.106a3.106,3.106,0,0,1-3.1,3.1H4.432v.443a1.647,1.647,0,0,0,1.624,1.625h13a1.647,1.647,0,0,0,1.625-1.625V11.369a6.006,6.006,0,0,0,1.477-1.043V25.651A3.106,3.106,0,0,1,19.055,28.753ZM5.17,19.3a.738.738,0,0,0,0,1.477h8.273a.738.738,0,0,0,0-1.477Zm0-3.545a.738.738,0,0,0,0,1.477h8.273a.738.738,0,0,0,0-1.477Zm0-3.545a.738.738,0,0,0,0,1.477H8.124a.738.738,0,1,0,0-1.477Zm.149-7.239-3.043,3.1h2.6a.455.455,0,0,0,.444-.443V4.971Z" transform="translate(-14544 11166)" fill="#fff"/>
-    <g id="Icon_feather-link" data-name="Icon feather-link" transform="translate(-14531.655 11166.332)">
-      <path id="Path_389" data-name="Path 389" d="M15,5.934a1.331,1.331,0,0,0,2.007.144l.8-.8A1.331,1.331,0,1,0,15.923,3.4l-.458.455" transform="translate(-9.877)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.6"/>
-      <path id="Path_390" data-name="Path 390" d="M6.188,14.026a1.331,1.331,0,0,0-2.007-.144l-.8.8a1.331,1.331,0,1,0,1.882,1.882l.455-.455" transform="translate(0 -8.624)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.6"/>
-    </g>
-  </g>
-</svg>
