@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.669" height="18.669" viewBox="0 0 18.669 18.669">
+  <g id="Group_261" data-name="Group 261" transform="translate(-1741.33 -453)">
+    <g id="Group_247" data-name="Group 247" transform="translate(1741.137 453)">
+      <circle id="Ellipse_338" data-name="Ellipse 338" cx="7.5" cy="7.5" r="7.5" transform="translate(1.862 2)" fill="#fff"/>
+      <path id="Icon_material-cancel" data-name="Icon material-cancel" d="M12.335,3a9.335,9.335,0,1,0,9.335,9.335A9.326,9.326,0,0,0,12.335,3ZM17,15.686,15.686,17l-3.351-3.351L8.984,17,7.667,15.686l3.351-3.351L7.667,8.984,8.984,7.667l3.351,3.351,3.351-3.351L17,8.984l-3.351,3.351Z" transform="translate(-2.807 -3)" fill="red"/>
+    </g>
+  </g>
+</svg>

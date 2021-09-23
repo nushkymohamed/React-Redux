@@ -1,0 +1,12 @@
+// Mixins
+
+// Flex Grid Column Mixin
+@mixin aspect-ratio($width, $height) {
+  padding-top: ($height / $width) * 100%;
+}
+
+// Mixin for Font size and line height
+@mixin font($size,$height) {
+  font-size: $size+px;
+  line-height: $height+px;
+}

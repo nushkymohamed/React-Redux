@@ -1,0 +1,213 @@
+[
+    {
+        "_id": "1",
+        "name": "Maths",
+        "subjectVideos": [
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            },
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            },
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            },
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            },
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            },
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            }
+        ],
+        "subjectTutors": [
+            {
+                "_id": "1",
+                "profilePicUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/Tutors/Ellipse+36.png",
+                "firstName": "Andrew",
+                "lastName": "Smith"
+            },
+            {
+                "_id": "1",
+                "profilePicUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/Tutors/Ellipse+36.png",
+                "firstName": "Andrew",
+                "lastName": "Smith"
+            },
+            {
+                "_id": "1",
+                "profilePicUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/Tutors/Ellipse+36.png",
+                "firstName": "Andrew",
+                "lastName": "Smith"
+            },
+            {
+                "_id": "1",
+                "profilePicUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/Tutors/Ellipse+36.png",
+                "firstName": "Andrew",
+                "lastName": "Smith"
+            }
+        ],
+        "tutorVideos": [
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            },
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            }
+        ]
+    },
+    {
+        "_id": "2",
+        "name": "English",
+        "subjectVideos": [
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            },
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            },
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            }
+        ],
+        "subjectTutors": [
+            {
+                "_id": "1",
+                "profilePicUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/Tutors/Ellipse+36.png",
+                "firstName": "Andrew",
+                "lastName": "Smith"
+            },
+            {
+                "_id": "1",
+                "profilePicUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/Tutors/Ellipse+36.png",
+                "firstName": "Andrew",
+                "lastName": "Smith"
+            },
+            {
+                "_id": "1",
+                "profilePicUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/Tutors/Ellipse+36.png",
+                "firstName": "Andrew",
+                "lastName": "Smith"
+            },
+            {
+                "_id": "1",
+                "profilePicUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/Tutors/Ellipse+36.png",
+                "firstName": "Andrew",
+                "lastName": "Smith"
+            }
+        ],
+        "tutorVideos": [
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            },
+            {
+                "_id": 7,
+                "type": "VIDEO",
+                "title": "How to learn English",
+                "topic": [
+                    "English Grammer"
+                ],
+                "previewImg": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7.png",
+                "previewVideoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4",
+                "videoUrl": "https://video-cofee-bean-bucket.s3-ap-southeast-1.amazonaws.com/Knodify/English+Reel/english+7/english+7+-+The+Present+Perfect+Tense.mp4"
+            }
+        ]
+    }
+]

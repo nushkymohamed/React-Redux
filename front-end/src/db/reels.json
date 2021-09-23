@@ -1,0 +1,68 @@
+[
+  {
+    "_id": "0cfba99b-745e-4f55-a2fd-f8b6f2ec2c6f",
+    "gradeId": "b8b7834c-b987-40b9-b9da-37a264f92efc",
+    "order": 1,
+    "productCreationContentSelectionRequests": null,
+    "reelTitle": "Cambridge International O and A Level subjects_A-Level_Chemistry",
+    "subjectId": "7bbeebbe-3d09-4d2c-b6da-40b993c59998",
+    "syllabusId": "a705d74e-ebe5-46b9-b7fd-04c8300ecb5e",
+    "trialContentIds": null,
+    "type": "STANDARD"
+  },
+  {
+    "_id": "0a80a53a-5715-4820-aa92-8531dfd5a1ad",
+    "gradeId": "b8b7834c-b987-40b9-b9da-37a264f92efc",
+    "order": 2,
+    "productCreationContentSelectionRequests": null,
+    "reelTitle": "Cambridge International O and A Level subjects_O-Level_PM",
+    "subjectId": "7bbeebbe-3d09-4d2c-b6da-40b993c59998",
+    "syllabusId": "a705d74e-ebe5-46b9-b7fd-04c8300ecb5e",
+    "trialContentIds": null,
+    "type": "STANDARD"
+  },
+  {
+    "_id": "60325969-8ddc-4cf3-a1e6-36a4afa8d428",
+    "gradeId": "b8b7834c-b987-40b9-b9da-37a264f92efc",
+    "order": 3,
+    "productCreationContentSelectionRequests": null,
+    "reelTitle": "Cambridge International O and A Level subjects_A-Level_Chemistry",
+    "subjectId": "7bbeebbe-3d09-4d2c-b6da-40b993c59998",
+    "syllabusId": "a705d74e-ebe5-46b9-b7fd-04c8300ecb5e",
+    "trialContentIds": null,
+    "type": "STANDARD"
+  },
+  {
+    "_id": "7a48c7a3-e653-4e78-9cb9-f2a584eab75f",
+    "gradeId": "b8b7834c-b987-40b9-b9da-37a264f92efc",
+    "order": 4,
+    "productCreationContentSelectionRequests": null,
+    "reelTitle": "Cambridge International O and A Level subjects_O-Level_PM",
+    "subjectId": "7bbeebbe-3d09-4d2c-b6da-40b993c59998",
+    "syllabusId": "a705d74e-ebe5-46b9-b7fd-04c8300ecb5e",
+    "trialContentIds": null,
+    "type": "STANDARD"
+  },
+  {
+    "_id": "4f225d70-e6ed-44f6-ad05-a308d70db944",
+    "gradeId": "b8b7834c-b987-40b9-b9da-37a264f92efc",
+    "order": 5,
+    "productCreationContentSelectionRequests": null,
+    "reelTitle": "Cambridge International O and A Level subjects_A-Level_Chemistry",
+    "subjectId": "7bbeebbe-3d09-4d2c-b6da-40b993c59998",
+    "syllabusId": "a705d74e-ebe5-46b9-b7fd-04c8300ecb5e",
+    "trialContentIds": null,
+    "type": "STANDARD"
+  },
+  {
+    "_id": "ec7a260d-f3a5-4085-aa20-035a15a7aba3",
+    "gradeId": "b8b7834c-b987-40b9-b9da-37a264f92efc",
+    "order": 6,
+    "productCreationContentSelectionRequests": null,
+    "reelTitle": "Cambridge International O and A Level subjects_O-Level_PM",
+    "subjectId": "7bbeebbe-3d09-4d2c-b6da-40b993c59998",
+    "syllabusId": "a705d74e-ebe5-46b9-b7fd-04c8300ecb5e",
+    "trialContentIds": null,
+    "type": "STANDARD"
+  }
+]

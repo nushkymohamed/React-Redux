@@ -1,0 +1,126 @@
+/* ==========================================================================
+   Upcoming Events
+   ========================================================================== */
+
+/* Home page upcoming events component */
+
+.upcoming-events {
+  max-width: 400px;
+  margin-top: auto;
+  position: relative;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__titlearrow {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      background: url('../../../images/svg-images/upcoming-events-arrow.svg') center center no-repeat;
+      background-size: contain;
+      height: 11px;
+      width: 16px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  &__popper {
+    background: rgba($featured-gray, 0.5);
+    border-radius: 16px;
+    opacity: 0;
+    padding: 24px;
+    transform: translateY(10px);
+    transition: all .4s $cubic-transition;
+    width: 100%;
+    z-index: -2;
+
+    /* Show the popper on active class */
+    &.active {
+      opacity: 1;
+      transform: translateY(0);
+      z-index: 1;
+    }
+
+    h2 {
+      color: $koach-blue-primary;
+      font-size: 16px;
+      font-weight: $font-medium;
+      line-height: 25px;
+      margin-bottom: 0;
+
+      &.post-title {
+        color: $white;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+    h3 {
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0 0 15px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    a {
+      color: $light-green;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: $font-medium;
+      line-height: 21px;
+    }
+  }
+
+  &__days {
+    background: rgba($featured-gray, .5);
+    border-radius: 50px;
+    grid-template-columns: repeat(7, auto);
+    display: grid;
+    margin: 10px 0 0;
+    padding: 15px;
+    width: 100%;
+
+    > li {
+      &,
+      a {
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        align-items: center;
+        border-radius: 50px;
+        color: $white;
+        cursor: pointer;
+        display: flex;
+        font-size: 20px;
+        font-weight: $font-semibold;
+        height: 40px;
+        justify-content: center;
+        line-height: 16px;
+        transition: all .5s $cubic-transition-2;
+        width: 40px;
+
+        &.active {
+          background: $koach-blue-primary;          
+        }
+
+        &.disabled {
+          color: $light-gray-2;
+          cursor: default;
+        }
+      }
+    }
+  }
+}

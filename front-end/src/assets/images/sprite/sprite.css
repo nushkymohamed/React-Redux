@@ -1,0 +1,126 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-calendar-gray {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+.icon-full-screen {
+  width: 33px;
+  height: 32px;
+  background-position: -48px 0;
+}
+.icon-heart {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.icon-maximize {
+  width: 46px;
+  height: 32px;
+  background-position: -144px 0;
+}
+.icon-message_gray {
+  width: 32px;
+  height: 32px;
+  background-position: -240px 0;
+}
+.icon-phone_gray {
+  width: 32px;
+  height: 32px;
+  background-position: -288px 0;
+}
+.icon-play {
+  width: 28px;
+  height: 32px;
+  background-position: -336px 0;
+}
+.icon-quality {
+  width: 48px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.icon-share {
+  width: 32px;
+  height: 32px;
+  background-position: -480px 0;
+}
+.icon-info-circle-solid {
+  width: 32px;
+  height: 32px;
+  background-position: -528px 0;
+}
+.icon-plus-solid {
+  width: 28px;
+  height: 32px;
+  background-position: -576px 0;
+}
+.icon-play-solid {
+  width: 28px;
+  height: 32px;
+  background-position: -624px 0;
+}
+.icon-menu-icon {
+  width: 32px;
+  height: 32px;
+  background-position: -672px 0;
+}
+.icon-mylist-add {
+  width: 32px;
+  height: 32px;
+  background-position: -720px 0;
+}
+.icon-mylist-added {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -48px;
+}
+.icon-play-btn {
+  width: 29px;
+  height: 32px;
+  background-position: -48px -48px;
+}
+.icon-thumb-up {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -48px;
+}
+.icon-thumb-down {
+  width: 32px;
+  height: 32px;
+  background-position: -144px -48px;
+}
+.icon-audio-off {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -48px;
+}
+.icon-audio-on {
+  width: 32px;
+  height: 32px;
+  background-position: -240px -48px;
+}
+.icon-arrow-down {
+  width: 101px;
+  height: 32px;
+  background-position: -288px -48px;
+}
+.icon-close {
+  width: 32px;
+  height: 32px;
+  background-position: -432px -48px;
+}
+.icon-left-arrow {
+  width: 24px;
+  height: 32px;
+  background-position: -480px -48px;
+}
+.icon-magnify-white {
+  width: 32px;
+  height: 32px;
+  background-position: -528px -48px;
+}
+

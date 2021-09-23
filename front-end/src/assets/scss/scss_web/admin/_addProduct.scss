@@ -1,0 +1,583 @@
+.addContentScreen {
+  &--wrapper {
+  }
+  &--titleArea {
+    align-items: center;
+    background-color: $green;
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+
+    .icon--wrapper,
+    p,
+    .buttonWrapper {
+      width: 100%;
+    }
+    .icon--wrapper {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      max-width: 10%;
+
+      svg {
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+      }
+    }
+    p {
+      font-size: 16px;
+      max-width: 85%;
+    }
+    .buttonWrapper {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      max-width: 5%;
+      position: relative;
+      &:before {
+        background-color: $knodify-green;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 1px;
+      }
+      svg {
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+  &--tutors {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    &-title {
+      color: $koach-blue-primary;
+      font-size: 16px;
+      font-weight: $font-medium;
+      margin-bottom: 15px;
+    }
+    &-content {
+      display: flex;
+      &-all {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        margin-right: 60px;
+        .circleIcon {
+          align-items: center;
+          background-color: $light-gray-3;
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          height: 100px;
+          width: 100px;
+
+          svg {
+            cursor: pointer;
+            height: 30px;
+            width: 30px;
+          }
+        }
+        p {
+          font-size: 16px;
+          margin-top: 12px;
+        }
+      }
+      &-scroll {
+        align-items: center;
+        width: 80%;
+
+        .slick-track {
+          margin-left: 0;
+        }
+      }
+      &-item {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        // margin-right: 60px;
+        // width: 100px;
+        &__image {
+          margin-bottom: 5px;
+          img {
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+          }
+        }
+
+        &:hover,
+        &.selected {
+          .addContentScreen--tutors-content-item__image img {
+            border: 5px solid $koach-green-primary;
+          }
+        }
+        &__name {
+          font-size: 16px;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+        &__count {
+          color: $koach-blue-primary;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &--contentArea {
+    background: $dark-gray-4;
+    display: inline-block;
+    padding: 30px 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+  &--content {
+    &-wrapper {
+      &__body {
+        margin-top: 30px;
+        &-header {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          height: 64px;
+          position: relative;
+          &:before {
+            background-color: $light-gray-2;
+            bottom: 4px;
+            content: '';
+            height: 1px;
+            left: -20px;
+            position: absolute;
+            width: calc(100% + 40px);
+          }
+          .categories {
+            align-items: center;
+            display: flex;
+            &-item {
+              color: $white;
+              font-size: 18px;
+              font-weight: $font-medium;
+              margin-right: 50px;
+              position: relative;
+              span {
+                background: $black;
+                border-radius: 12px;
+                margin-left: 20px;
+                padding: 2px 15px;
+              }
+              &.selected {
+                &:before {
+                  background-color: $koach-blue-primary;
+                  bottom: -15px;
+                  content: '';
+                  height: 3px;
+                  left: 0;
+                  position: absolute;
+                  width: 70%;
+                }
+                span {
+                  background: $green;
+                }
+              }
+            }
+          }
+          .btn--selectAll {
+            p {
+              font-size: 18px;
+              font-weight: $font-medium;
+              span {
+                cursor: pointer;
+                background: $green;
+                border-radius: 12px;
+                margin-left: 20px;
+                padding: 5px 15px;
+              }
+            }
+          }
+        }
+        &-buttonTab {
+          display: inline-block;
+          width: 100%;
+          .showSelected {
+            max-width: 150px;
+            width: 100%;
+            height: 30px;
+            border-radius: 100px;
+            float: right;
+          }
+        }
+        &-content {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 25px;
+          &-item {
+            margin-bottom: 20px;
+            margin-right: 20px;
+
+            &:nth-of-type(4n) {
+              margin-right: 0;
+            }
+
+            &.gray-timer {
+              .individualContent--timer {
+                background: $light-gray-2;
+              }
+            }
+            &.not-selected {
+              .individualContent--selection {
+              }
+            }
+          }
+        }
+      }
+      &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+      }
+      &__pagination {
+        display: flex;
+        &-count {
+          align-items: center;
+          background: $light-gray-2;
+          border-radius: 5px;
+          cursor: pointer;
+          display: flex;
+          font-size: 12px;
+          justify-content: center;
+          height: 20px;
+          width: 20px;
+          &.selected {
+            background: $koach-blue-primary;
+          }
+          &.previous,
+          &.next {
+            background: none;
+
+            svg {
+              height: 25px;
+              width: 25px;
+
+              polyline {
+                stroke: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Edit Product
+  &.editProduct {
+    margin-top: 20px;
+
+    .addContentScreen {
+      &--titleArea {
+        background: $dark-gray-4;
+        border-bottom: 1px solid $light-gray-2;
+
+        p {
+          max-width: 75%;
+        }
+
+        .buttonWrapper {
+          justify-content: space-between;
+          max-width: 15%;
+
+          &:before {
+            background-color: $dark-gray-2;
+          }
+
+          div {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+            max-width: 33%;
+            width: 100%;
+
+            &:before {
+              background-color: $dark-gray-2;
+              content: '';
+              height: 100%;
+              right: 0;
+              position: absolute;
+              width: 1px;
+            }
+
+            svg {
+              height: 18px;
+              width: 18px;
+            }
+          }
+        }
+      }
+      &--tutors {
+        &-title {
+          padding-left: 85px;
+        }
+        &-content-scroll {
+          padding: 0 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Reel Content
+  &.reelContent {
+    background: $dark-gray-4;
+
+    .addContentScreen {
+      &--titleArea {
+        padding-left: 20px;
+
+        .buttonWrapper {
+          max-width: 10%;
+
+          div {
+            max-width: 50%;
+
+            &::before {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+
+    &.edit {
+      .addContentScreen {
+        &--wrapper {
+        }
+        &--titleArea {
+          background-color: $green;
+          padding-left: 20px;
+        }
+      }
+      .showSelected {
+        max-width: 150px;
+        width: 100%;
+        height: 30px;
+        border-radius: 100px;
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+
+      .product_reel--selections {
+        margin-bottom: 20px;
+        padding: 20px;
+
+        .form__form--field .ant-select.form-input {
+          background-color: $black;
+        }
+      }
+    }
+  }
+
+  // Featured Reel View Container
+  &.featureReelViewContainer {
+    .addContentScreen {
+      &--contentArea {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
+
+        &.moveUpContainer {
+          position: relative;
+          top: -100px;
+          width: 100%;
+
+          .addContentScreen--content-wrapper__footer {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+.individualContent {
+  background-color: $gray-light;
+  &--wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 170px;
+    position: relative;
+    width: 275px;
+  }
+  &--title {
+    @include for-desktop-up {
+      color: $black;
+      display: block;
+      font-size: 11px;
+      font-weight: $font-medium;
+      left: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-140%);
+      width: 100px;
+    }
+
+    &-background {
+      background: $koach-blue-primary;
+      bottom: 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      font-size: 9px;
+      font-weight: $font-normal;
+      margin-top: 0;
+      padding: 10px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+
+      @include for-desktop-up {
+        background: $koach-blue-primary-opacity;
+        border-radius: 0;
+        clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        padding-right: 25px;
+        text-align: left;
+        width: 45%;
+      }
+
+      // @include for-big-desktop-up {
+      //   width: 140px;
+      // }
+    }
+  }
+  &--group {
+    @include for-desktop-up {
+      color: $white;
+      display: block;
+      font-size: 11px;
+      font-weight: $font-medium;
+      left: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-30%);
+      width: 100px;
+    }
+  }
+  &--chapter {
+    @include for-desktop-up {
+      color: $white;
+      display: block;
+      font-size: 11px;
+      font-weight: $font-medium;
+      left: 10px;
+      position: absolute;
+      top: 75%;
+      width: 100px;
+    }
+  }
+  &--selection {
+    background: $green;
+    border-radius: 0 0 0 100px;
+    -moz-border-radius: 0 0 0 100px;
+    -webkit-border-radius: 0 0 0 100px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+
+    svg {
+      height: 20px;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      width: 20px;
+
+      path {
+        stroke: $white;
+      }
+    }
+  }
+  &--timer {
+    background: $green;
+    border-radius: 100%;
+    height: 40px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 40px;
+
+    svg {
+      height: 20px;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      width: 20px;
+
+      path {
+        stroke: $white;
+      }
+    }
+  }
+  &--order {
+    align-items: center;
+    background-color: $white;
+    border: 3px solid $white;
+    border-radius: 100%;
+    color: $black;
+    display: flex;
+    font-family: $font-family;
+    justify-content: center;
+    height: 35px;
+    text-align: center;
+    width: 35px;
+  }
+  &--tutor {
+    background-color: $white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    border: 3px solid $white;
+    color: $black;
+    height: 35px;
+    width: 35px;
+  }
+  &--options {
+    align-items: flex-end;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+
+    div {
+      &:last-of-type {
+        margin-top: 10px;
+      }
+    }
+  }
+  &--typeLabel {
+    background-color: $white;
+    border-radius: 0px 15px 0px 0px;
+    bottom: 0;
+    color: $black;
+    font-size: 14px;
+    left: 0;
+    padding: 3px 20px;
+    position: absolute;
+    text-align: center;
+  }
+}

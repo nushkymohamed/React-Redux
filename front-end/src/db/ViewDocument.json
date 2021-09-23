@@ -1,0 +1,67 @@
+ {
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "subject": "Science",
+    "topic": "Chapter 1",
+   "lesson": "Weekly",
+    "relatedVideo": [
+      {
+        "id": "12121",
+        "title": "History of the atom",
+        "subtitle": "Model of the atom",
+        "previewUrl": "https://knodify-content-upload-dev.s3.amazonaws.com/public/photo-1515041219749-89347f83291a.jpeg"
+      },
+      {
+        "id": "12122",
+        "title": "History of the atom",
+        "subtitle": "Model of the atom",
+        "previewUrl": "https://knodify-content-upload-dev.s3.amazonaws.com/public/photo-1515041219749-89347f83291a.jpeg"
+      },
+      {
+        "id": "12123",
+        "title": "History of the atom",
+        "subtitle": "Model of the atom",
+        "previewUrl": "https://knodify-content-upload-dev.s3.amazonaws.com/public/photo-1515041219749-89347f83291a.jpeg"
+      }
+    ],
+    "relatedDocument": [
+      {
+        "id": "22121",
+        "title": "Histoy of the atom",
+        "subtitle": "Model of the atom",
+        "previewUrl": "https://knodify-content-upload-dev.s3.amazonaws.com/public/photo-1515041219749-89347f83291a.jpeg"
+      },
+      {
+        "id": "22122",
+        "title": "Histoy of the atom",
+        "subtitle": "Model of the atom",
+        "previewUrl": "https://knodify-content-upload-dev.s3.amazonaws.com/public/photo-1515041219749-89347f83291a.jpeg"
+      },
+      {
+        "id": "22123",
+        "title": "Histoy of the atom",
+        "subtitle": "Model of the atom",
+        "previewUrl": "https://knodify-content-upload-dev.s3.amazonaws.com/public/photo-1515041219749-89347f83291a.jpeg"
+      }
+    ],
+    "relatedAssignment": [
+      {
+        "id": "22121",
+        "title": "History of the atom",
+        "subtitle": "Model of the atom",
+        "previewUrl": "https://knodify-content-upload-dev.s3.amazonaws.com/public/photo-1515041219749-89347f83291a.jpeg"
+      },
+      {
+        "id": "22122",
+        "title": "History of the atom",
+        "subtitle": "Model of the atom",
+        "previewUrl": "https://knodify-content-upload-dev.s3.amazonaws.com/public/photo-1515041219749-89347f83291a.jpeg"
+      },
+      {
+        "id": "22123",
+        "title": "History of the atom",
+        "subtitle": "Model of the atom",
+        "previewUrl": "https://knodify-content-upload-dev.s3.amazonaws.com/public/photo-1515041219749-89347f83291a.jpeg"
+      }
+    ]
+  }

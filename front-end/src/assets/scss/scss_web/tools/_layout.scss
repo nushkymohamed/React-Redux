@@ -1,0 +1,77 @@
+/*
+ * Layout
+ */
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: $black;
+  padding-top: 100px !important;
+  display: inline-block;
+  width: 100%;
+
+  &.popup-active {
+    overflow: hidden;
+  }
+
+  &.admin {
+    padding-top: 12vh !important;
+  }
+
+  &.header--transparent {
+    padding-top: 0 !important;
+
+    .header {
+      background: none;
+      position: relative;
+    }
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  transition: all 0.4s $cubic-transition-2;
+}
+
+.container {
+  @include padding(0 4%);
+
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+
+  @include grid-container;
+}
+
+.hide {
+  display: none !important;
+}
+
+hr {
+  border-color: $light-gray-2;
+}

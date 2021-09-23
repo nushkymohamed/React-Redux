@@ -1,0 +1,187 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+ 
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+ 
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+ 
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+ 
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+ 
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  max-width: 300px !important;
+}
+ 
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+ 
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+ 
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+ 
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+ 
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-overlay,
+.bm-menu-wrap,
+.bm-menu,
+.bm-item-list,
+.bm-item {
+  &:focus {
+    outline: none;
+  }
+}
+
+/* Custom Code */
+.bm-burger-button {
+  right: 15px;
+  left: unset;
+
+  @include for-desktop-up {
+    display: none;
+  }
+
+  .bm-burger-bars {
+    background: $white;
+  }
+}
+
+.bm-overlay {
+  @include for-desktop-up {
+    display: none;
+  }
+}
+
+.bm-menu-wrap {
+  @include for-desktop-up {
+    transform: unset !important;
+    position: unset !important;
+    right: unset !important;
+    z-index: unset !important;
+    width: unset !important;
+    height: unset !important;
+    max-width: unset !important;
+
+    .bm-menu {
+      background: none;
+      padding: 0;
+
+      .bm-item-list {
+        padding: 0;
+
+        .header__nav {
+          ul {
+            flex-direction: row;
+
+            li {
+              margin-bottom: 0;
+              margin-right: 20px;
+            }
+          }
+        }
+
+        .header__search {
+          margin-right: 20px;
+        }
+
+        .header__user {
+          .header__nav-item {
+            margin-bottom: 0;
+          }
+
+          .user_avatar {
+            .dropdown-content {
+              left: unset !important;
+              margin-top: 0;
+              padding-top: 50px;
+              right: -20px;
+              transform: translateY(-5px);
+
+              .userdropdown {
+                background: rgba($featured-gray, .8) !important;
+              }
+
+              .userdropdown__settings-manage {
+                display: block;
+                max-width: 35%;
+              }
+
+              .userdropdown__settings-loggedin {
+                max-width: 30%;
+              }
+
+              .userdropdown__settings-profile {
+                align-items: center;
+                flex-direction: column;
+                max-width: 30%;
+
+                .description {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bm-menu {
+    height: auto !important;
+      overflow: unset !important;
+
+    .userdropdown {
+      background: $black !important;
+    }
+  }
+}
+
+.bm-cross-button {
+  @include for-desktop-up {
+    display: none;
+  }
+}

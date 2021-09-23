@@ -1,0 +1,264 @@
+/**
+* Video Info Block
+*/
+
+.video-info {
+  position: relative;
+  background-color: $black;
+  display: none;
+  overflow: hidden;
+  height: 0vw;
+  margin-bottom: 25px;
+
+  @include grid-media($lg) {
+    display: flex;
+  }
+  
+  &.animation-on {
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+      animation-name: info-box-open;
+      animation-timing-function: ease;
+  }
+
+  &.animation-off {
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-name: info-box-close;
+    animation-timing-function: ease;
+}
+
+  &.active {
+    height: 32vw;
+  }
+
+  /* Standard syntax */
+  @keyframes info-box-open {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 32vw;
+    }
+  }
+
+  /* Standard syntax */
+  @keyframes info-box-close {
+    from {
+      height: 32vw;
+    }
+
+    to {
+      height: 0;
+    }
+  }
+
+  .plyr {
+    // width: 60%;
+      @include grid-media($lg) { 
+        &:before{
+          content: '';
+          position: absolute;
+          z-index: 10;
+          background-image: linear-gradient(to right, #000, transparent);
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 275px;
+        }
+      }
+  
+    &__controls {
+      display: none !important;
+    }
+
+    &__control {
+      display: none !important;
+    }
+  }
+
+  &__close-icon {
+    cursor: pointer;
+    width: 20px;
+    margin: 10px 10px 0;
+    position: absolute;
+    right: 13px;
+    height: 20px;
+    z-index: 10;
+
+    svg {
+      fill: $white;
+      height: 100%;
+      width: 100%;
+    }
+
+    @include grid-media($lg) { 
+      height: 25px;
+      width: 25px;
+    }
+  }
+
+  &__info {
+    @include padding(28px 0 0 4%);
+    
+    color: $white;
+    display: flex;
+    font-family: $font-family;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 39%;
+
+    .player_section__controls {
+      margin: 2vh 0;
+    }
+
+  }
+
+  &__teacher {
+    font-size: 1.36vw;
+    line-height: 1.2;
+  }
+
+  &__title {
+    @include margin(1vw 0 0);
+
+    // font-size: 3.36vw;
+    font-size: 2.6vw;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  &__message {
+    font-size: 1.2vw;
+    // font-size: 1.7vw;
+    // font-weight: $font-bold;
+    margin-top: 0.46875vw;
+  }
+
+  &__synopsis {
+    // font-size: 1.36vw;
+    font-size: 0.9vw;
+    margin-top: 0.46875vw;
+  }
+
+  &__action {
+    @include margin(1.875vw 0 1.25vw);
+
+    display: flex;
+    justify-content: space-between;
+
+    display: none;
+
+    .btn {
+      background-color: rgba(51, 51, 51, 0.4);
+      border-radius: 0.2vw;
+      border-width: 0;
+      box-shadow: none;
+      font-size: 1.1vw;
+      height: 1.2vw;
+      margin-bottom: 0.75em;
+      padding: 0.75em 1.5em;
+      color: $white;
+      transition: all .4s $cubic-transition;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: $white;
+        color: $black;
+
+        svg {
+          fill: $black;
+        }
+      }
+
+      svg {
+        @include margin(0 10px 0);
+        fill: $white;
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    &--title {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__meta-lists {
+    display: none;
+
+    @include margin(20px 0 0 0);
+
+    .inline-list {
+      font-size: 1.2em;
+      color: $gray;
+      margin: 2px 0 0 0;
+
+      a {
+        color: $gray !important;
+        text-decoration: none;
+      }
+
+      .list-label {
+        font-weight: $font-bold;
+      }
+
+      .list-items {
+        font-weight: $font-thin;
+      }
+    }
+  }
+
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__container {
+    @include grid-media($lg) { 
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    color: $white;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+  
+    li {
+      @include padding(1em 1.5em 0);
+
+      display: inline-block;
+      font-size: 1.3vw;
+      font-family: $font-family;
+      cursor: pointer;
+
+      span {
+        display: block;
+        height: .33em;
+        margin-top: .66em;
+        width: 100%;
+      }
+
+      &:hover {
+        span {
+          background: $red;
+        }
+      }
+    }
+  }
+}

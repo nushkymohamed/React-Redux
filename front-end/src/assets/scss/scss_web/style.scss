@@ -1,0 +1,81 @@
+/*!
+Theme Name: Knodify
+Author: Knodify
+Author URI: Knodify
+Description: Custom theme developed for the Knodify.
+*/
+
+// Neat Bourbon
+@import '~bourbon/core/bourbon';
+@import '~bourbon-neat/core/neat';
+// Settings
+// Used with preprocessors and contain font, colors definitions, etc.
+// =====================
+@import 'settings/variables';
+@import 'settings/fonts';
+@import 'settings/breakpoints';
+// Tools
+// Globally used mixins and functions
+@import 'tools/animation';
+@import 'tools/layout';
+@import 'tools/mixins';
+@import 'tools/typography';
+@import 'tools/scrollbar';
+@import 'tools/custom-select';
+@import 'tools/burger-menu';
+// Components
+// Specific UI components
+@import 'components/buttons';
+@import 'components/featuredVideo';
+@import 'components/forms';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/homeSectionOne';
+@import 'components/modalPopup';
+@import 'components/theatre';
+@import 'components/playerSection';
+@import 'components/scrollMore';
+@import 'components/videoInfo';
+@import 'components/navDropdown';
+@import 'components/tilegrid';
+@import 'components/assessments';
+@import 'components/assessment-popup';
+@import 'components/assessment-results';
+@import 'components/policy';
+@import 'components/loginscreen';
+@import 'components/lightmode';
+@import 'components/statspopup';
+@import 'components/upcomingEvents';
+@import 'components/signup';
+@import 'components/createDocument';
+@import 'components/checkBox';
+@import 'components/select';
+@import 'components/subjectSelect';
+@import 'components/homepage';
+// Admin Screens
+@import 'admin/admin';
+@import 'admin/createContent';
+@import 'admin/addProduct';
+@import 'admin/createTutor';
+@import 'admin/trainingRequest';
+@import 'admin/trainingSummary';
+@import 'admin/addDocument';
+@import 'admin/createUser';
+@import 'admin/allUsers';
+@import 'admin/nodeTree';
+@import 'admin/groupUsers';
+@import 'admin/adminLandingPage';
+@import 'admin/createProduct';
+@import 'admin/userManagement';
+@import 'admin/notifications';
+@import 'admin/theaterPage';
+@import 'admin/reelView';
+
+// Vendor Styles
+// Styles included with plugins, etc
+// ======================
+// Overrides
+// Utilities and helper classes with ability to override anything which goes before
+@import 'overrides/utility';
+@import 'overrides/overrides';

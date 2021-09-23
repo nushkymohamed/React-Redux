@@ -1,0 +1,117 @@
+.homepage {
+  &--videoblock {
+    background-color: $black-opacity;
+    border-radius: 20px;
+    padding: 35px 45px;
+    width: 100%;
+
+    @include for-tablet-portrait-up {
+      margin: 0 auto;
+      width: 615px;
+    }
+
+    @include for-desktop-up {
+      position: absolute;
+      top: 250px;
+      left: 4%;
+      width: 515px;
+    }
+
+    @include for-small-desktop-up {
+      width: 515px;
+    }
+
+    @include for-medium-desktop-up {
+      top: 450px;
+    }
+
+    &-video {
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      height: 180px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include for-tablet-portrait-up {
+        height: 250px;
+      }
+
+      @include for-desktop-up {
+        height: 175px;
+      }
+
+      @include for-desktop-up {
+        height: 275px;
+      }
+
+      @include for-medium-desktop-up {
+        height: 205px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      &__play {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 40px;
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: $font-medium;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+  .banner-image {
+    background-size: cover;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    @include for-tablet-portrait-up {
+      height: 380px;
+    }
+
+    @include for-desktop-up {
+      height: 700px;
+    }
+
+    @include for-medium-desktop-up {
+      height: 860px;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $black-opacity-light;
+    }
+  }
+}

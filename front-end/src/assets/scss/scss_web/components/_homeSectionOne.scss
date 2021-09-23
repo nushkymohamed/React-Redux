@@ -1,0 +1,69 @@
+/**
+* Home Screen
+*/
+
+.home-screen {
+  position: relative;
+  background-position:  top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include grid-media($lg) {
+    background-size: cover;
+  }
+
+  .player_section__video,
+  .plyr.plyr--full-ui.plyr--video.plyr--html5.plyr--pip-supported.plyr--fullscreen-enabled.plyr--playing.plyr__tab-focus,
+  .plyr.plyr--full-ui.plyr--video.plyr--html5.plyr--pip-supported.plyr--fullscreen-enabled.plyr--playing {
+  	// pointer-events: none !important;
+  }
+
+  .admin-reel-add--icons {
+    cursor: pointer;
+    display: none;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    position: relative;
+
+    p {
+      font-size: 1.1vw;
+      margin: 0 3vw;
+      padding-left: 2vw;
+      position: relative;
+
+      &:before {
+        align-items: center;
+        background: $koach-blue-primary;
+        border-radius: 5vw;
+        content: "+";
+        display: flex;
+        font-size: 1.5vw;
+        justify-content: center;
+        height: 1.5vw;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.5vw;
+      }
+    }
+
+    .admin-reel-position--icons {
+      display: none;
+      flex-direction: column;
+      height: 100%;
+      left: 1.6vh;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+    }
+  }
+
+  .admin-advanced-setting--icons {
+    display: none;
+    position: relative;
+    margin: 4vw 3vw;
+    margin-top: 3vw;
+  }
+}

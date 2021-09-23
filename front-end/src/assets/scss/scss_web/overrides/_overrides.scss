@@ -1,0 +1,240 @@
+/**
+* Override Styles
+*/
+
+.react-pdf__Page__textContent {
+  display: none !important;
+}
+
+.disable_click {
+  pointer-events: none !important;
+}
+
+.middle-video-reel,
+.item-policy {
+  .slick-prev,
+  .slick-next {
+    top: 50% !important;
+  }
+}
+
+.video-info.animation-on {
+  margin-left: -1vh;
+  width: calc(100% + 2vh);
+}
+
+.slick-slider,
+.slick-track,
+.slick-track div {
+  &:focus {
+    outline: none !important;
+  }
+}
+
+// react-toastify style guide
+// https://fkhadra.github.io/react-toastify/how-to-style
+.Toastify__progress-bar--dark {
+  background-color: $koach-blue-primary;
+}
+.Toastify__toast--dark {
+  background-color: $dark-gray-1;
+}
+
+ul.react-paginate {
+  display: flex;
+  padding-left: 0;
+  padding-right: 15px;
+  margin: 0;
+  height: 30px;
+
+  li {
+    align-items: center;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    min-width: 30px;
+    min-height: 20px;
+    user-select: none;
+
+    &.active {
+      background-color: $koach-blue-primary;
+    }
+
+    &:hover {
+      background-color: $koach-blue-primary-opacity;
+    }
+
+    &.previous,
+    &.next {
+      background: none;
+    }
+
+    &.disabled {
+      display: none;
+    }
+
+    a {
+      font-size: 14px;
+      padding: 5px;
+    }
+  }
+}
+
+// !important use to override the librarytooltip-disabled
+.slick-slider {
+  .slick-next {
+    right: -40px;
+    &:before {
+      content: '';
+      background: url('../../../images/svg-images/scroll-arrow.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 30px;
+      width: 15px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .slick-prev {
+    &:before {
+      content: '';
+      background: url('../../../images/svg-images/scroll-arrow.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 30px;
+      width: 15px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(180deg);
+    }
+  }
+}
+// Date picker
+.react-datepicker {
+  background-color: $black;
+  border: none;
+
+  &__header {
+    background-color: $dark-gray-2;
+  }
+  &__day-name,
+  &__day,
+  &__time-name,
+  &__current-month,
+  &-time__header,
+  &-year-header {
+    color: $white;
+  }
+  &__day--keyboard-selected,
+  &__month-text--keyboard-selected,
+  &__quarter-text--keyboard-selected,
+  &__year-text--keyboard-selected {
+    background: $koach-blue-primary;
+  }
+
+  &__day,
+  &__month-text,
+  &__quarter-text,
+  &__year-text {
+    &:hover {
+      background: $koach-blue-secondary;
+    }
+  }
+
+  &__month-select {
+    min-width: 120px !important;
+  }
+  &__year-select {
+    min-width: 90px !important;
+  }
+}
+// Ant Dropdown
+.ant {
+  &-select {
+    &.with_label {
+      padding-top: 35px !important;
+    }
+    &-arrow,
+    &-clear {
+      display: none !important;
+    }
+    &-selector {
+      padding: 0 13px !important;
+    }
+    &-dropdown {
+      border-radius: 0 0 10px 10px !important;
+    }
+    &-selection-item {
+      background: none !important;
+      border: 0 !important;
+    }
+  }
+  &-empty {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &-image {
+      display: none !important;
+    }
+  }
+}
+.hideElement {
+  display: none !important;
+}
+//Toggle Switch
+.toggleSwitch {
+  display: flex;
+  .switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  .slider {
+    background-color: $dark-gray-4;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    background-color: $green;
+    bottom: 4px;
+    content: '';
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+  }
+
+  input:checked + .slider {
+    background-color: $light-gray-3;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(80px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}

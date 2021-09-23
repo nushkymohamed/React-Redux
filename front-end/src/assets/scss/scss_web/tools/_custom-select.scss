@@ -1,0 +1,99 @@
+body {
+  #root {
+    &::-webkit-scrollbar {
+      width: 1em;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: red;
+      outline: 1px solid slategrey;
+    }
+    .Dropdown-root {
+      margin-bottom: 5vh;
+      position: relative;
+      user-select: none;
+      width: 100%;
+
+      .Dropdown-control {
+        background-color: $dark-gray-2;
+        border: 0;
+        display: flex;
+        min-height: 5.5vh;
+        padding: 1vh;
+        padding-right: 4vh;
+        position: relative;
+
+        &:before {
+          background-image: url('../../../images/svg-images/reel-left-arrow.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          content: '';
+          height: 30%;
+          right: 2%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%) rotate(-90deg);
+          width: 1.2vw;
+        }
+      }
+
+      .Dropdown-placeholder.is-selected,
+      .Dropdown-placeholder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 1.5;
+        font-size: 1vw;
+        border: none;
+        border-radius: 0;
+        cursor: default;
+        color: $gray;
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 80%;
+        margin-top: 5px;
+      }
+
+      .Dropdown-arrow {
+        display: none;
+      }
+
+      .Dropdown-menu {
+        background-color: $dark-gray-2;
+        border: 0;
+        font-size: 1vw;
+        color: $white;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+
+      .Dropdown-option.is-selected,
+      .Dropdown-option:hover {
+        background-color: $white;
+        color: $gray;
+      }
+
+      .Dropdown-option {
+        color: $white;
+      }
+    }
+  }
+
+  .light {
+    .Dropdown-root {
+      .Dropdown-option.is-selected,
+      .Dropdown-option:hover,
+      .Dropdown-option {
+        color: $gray !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.policy {
+  &__reel {
+    padding-top: 4vh;
+  }
+  
+  &__tile {
+    align-items: center;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    justify-content: center;
+    margin-right: 0.2vw;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    
+    &:before {
+      background-color: #242424;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      opacity: 0.9;
+      top: 0;
+      transition: all .4s $cubic-transition;
+      width: 100%;
+    }
+    
+    &:hover {
+      &:before {
+        background: $koach-blue-primary;
+      }
+    }
+    
+    p {        
+      font-size: 1.3vw;
+      font-weight: 500;      
+      margin: 0;
+      position: absolute;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.screensize {
+  align-items: center;
+  background: $black;
+  display: flex;
+  left: 0;
+  justify-content: center;
+  height: 100%;
+	position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  
+	&--wrapper {
+    align-items: center;
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+	}
+	
+	&--logo {
+		img {
+			width: 40%;
+		}
+	}
+
+	&--messagearea {
+		font-family: $font;
+		
+		h3 {}
+		p {}
+	}
+}

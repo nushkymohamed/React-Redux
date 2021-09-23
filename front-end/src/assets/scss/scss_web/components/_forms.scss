@@ -1,0 +1,712 @@
+/**
+* Forms
+*/
+
+.form-item {
+  @include margin(null null 15px);
+  &:last-child {
+    @include margin(null null 0);
+  }
+  &--with-icon {
+    input {
+      @include padding(null null null 50px);
+    }
+  }
+}
+
+.form-input {
+  @include padding(null 15px);
+  background: $dark-gray;
+  background-size: 18px 18px !important;
+  border: 1px solid $gray-light;
+  color: $white;
+  font-size: 16px;
+  min-height: 45px;
+  height: auto;
+  line-height: 45px;
+  outline: none;
+  width: 100%;
+  &--date {
+    background: url('../../../images/svg-images/icon-calendar.svg') left 15px
+      center no-repeat;
+  }
+  &--time {
+    background: url('../../../images/svg-images/icon-clock.svg') left 15px
+      center no-repeat;
+  }
+  &--search {
+    background-image: url('../../../images/svg-images/icon-search.svg');
+    background-color: $featured-gray-1;
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    background-size: 16px !important;
+    border: none;
+    border-radius: 30px;
+    color: $white;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: $font-medium;
+    height: 55px;
+    padding: 20px;
+
+    &::-webkit-input-placeholder {
+      /* Edge */
+      color: $white;
+    }
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $white;
+    }
+    &::placeholder {
+      color: $white;
+    }
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      -webkit-appearance: none;
+    }
+  }
+  &.timer {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  &--right {
+    button {
+      &:first-child {
+        @include margin(null null null auto);
+        margin-right: 1vw;
+      }
+    }
+  }
+}
+
+.form {
+  margin-top: 20px;
+  position: relative;
+  &.fullWidth {
+    max-width: 100%;
+    width: 100%;
+
+    .form__form--field {
+      max-width: 100%;
+    }
+  }
+  &.no-spacing {
+    margin: 0;
+    padding: 0;
+  }
+  &__form--fields {
+    label {
+      color: $white;
+      cursor: pointer;
+      font-family: $font;
+      font-size: 18px;
+      font-weight: normal;
+      height: 100%;
+    }
+    a {
+      color: $lightorange;
+      float: right;
+      font-family: $font;
+      font-size: 14px;
+      font-weight: $font-normal;
+      margin: 0;
+      margin-top: 10px;
+    }
+  }
+  &__form--field {
+    &.dropdown-selected-added {
+      background-color: $dark-gray-3;
+      border-radius: 10px;
+      padding: 10px;
+      position: relative;
+      min-height: 72px;
+
+      .close {
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  &--field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+  &--buttons {
+    margin-top: 50px;
+  }
+  @include for-desktop-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .react-datepicker-popper {
+    left: 15px !important;
+    // top: 70px !important;
+    transform: none !important;
+    z-index: 2;
+    select {
+      margin: 10px 0;
+      min-height: 35px;
+      min-width: 70px;
+      padding: 5px;
+      padding-right: 20px;
+    }
+  }
+  .react-datepicker__triangle {
+    display: none;
+  }
+  .react-datepicker__day--today,
+  .react-datepicker__day--selected {
+    // border: 2px solid $koach-blue-primary;
+    border-radius: 5px;
+  }
+  .react-datepicker__day--selected {
+    background: $koach-blue-primary;
+    color: $white;
+  }
+  &__form {
+    h3 {
+      color: $koach-blue-primary;
+    }
+    &--field {
+      position: relative;
+      @include for-desktop-up {
+        max-width: 370px;
+        width: 100%;
+      }
+      &.twoElements {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        label {
+          position: relative;
+          top: 10px;
+        }
+
+        .form__form--field {
+          max-width: 210px;
+
+          .ant-select.form-input {
+            background-size: 12px 12px !important;
+            margin-bottom: 0 !important;
+            min-height: 45px;
+            padding-top: 0;
+          }
+        }
+      }
+      &.flexRow {
+        display: flex;
+        margin-top: 15px;
+
+        .checkbox-wrapper {
+          margin: 0;
+          width: 35px;
+        }
+
+        p {
+          margin: 0;
+          margin-right: 10px;
+        }
+
+        &--inner {
+          display: flex;
+          height: 40px;
+          align-items: center;
+        }
+      }
+      &.description-field {
+        background: $dark-gray-1;
+        border: none;
+        border-radius: 10px;
+        min-height: 70px;
+
+        textarea {
+          margin-bottom: 0px;
+          line-height: 20px;
+          padding-top: 5px;
+        }
+      }
+      input,
+      select,
+      textarea,
+      .Dropdown-root.form-input,
+      .ant-select.form-input {
+        background: $dark-gray-1;
+        border: none;
+        color: $light-gray-3;
+        font-family: $font;
+        font-size: 14px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        min-height: 70px;
+        padding-top: 25px;
+        &::-webkit-input-placeholder {
+          /* Edge */
+          font-size: 14px;
+        }
+        &:-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          font-size: 14px;
+        }
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+      textarea {
+        resize: none;
+      }
+      input[type='file'] {
+        display: none;
+      }
+      input[type='time'] {
+        background-image: url('../../../images/svg-images/icon-timer-new.svg');
+        background-repeat: no-repeat, repeat;
+        background-position: right 0.7em top 50%, 0 0;
+        background-size: 20px;
+        padding-left: 14px;
+        width: 100%;
+      }
+      .file-input {
+        background-image: url('../../../images/svg-images/icon-upload.svg');
+        background-repeat: no-repeat, repeat;
+        background-position: right 1px;
+        background-size: 15px;
+        border-bottom: 1px solid $light-gray-2;
+        color: $light-gray-2;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        left: unset;
+        // margin-left: 55px;
+        margin-top: 30px;
+        position: unset;
+        top: unset;
+        width: 100%;
+        z-index: unset;
+      }
+      .input-label {
+        height: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        opacity: 0 !important;
+      }
+      select,
+      .Dropdown-root.form-input,
+      .ant-select.form-input {
+        background-image: url('../../../images/svg-images/icon-select_dropdown.svg');
+        background-repeat: no-repeat, repeat;
+        background-position: right 15px top 50%, 0 0;
+        background-size: 18px !important;
+        margin-bottom: 30px !important;
+        padding-left: 0;
+        padding-right: 0;
+        &::-ms-expand {
+          display: none;
+        }
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+
+        &.is-open {
+          border-radius: 10px 10px 0 0 !important;
+        }
+      }
+      .Dropdown-control {
+        background: none !important;
+        min-height: 35px !important;
+        padding: 0 15px !important;
+        padding-top: 10px !important;
+        &:before {
+          content: none !important;
+        }
+        .Dropdown-placeholder {
+          font-size: 14px !important;
+          line-height: 18px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .Dropdown-menu {
+        background: $dark-gray !important;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        // box-shadow: 3px 4px 12px 0px $light-gray-3;
+        left: 50%;
+        margin-top: 0;
+        padding: 0 10px;
+        position: absolute;
+        top: 70px;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 20;
+        .Dropdown-noresults {
+          font-size: 14px !important;
+        }
+        .Dropdown-option {
+          border-bottom: 1px solid $dark-gray-1;
+          font-size: 14px !important;
+          text-align: left;
+          line-height: 1.7;
+          min-height: 65px;
+          display: flex;
+          align-items: center;
+          &:last-of-type {
+            border-bottom: none;
+          }
+          &.is-selected,
+          &:hover {
+            background: none !important;
+            color: $koach-blue-primary !important;
+            font-weight: $font-bold;
+          }
+        }
+      }
+      label {
+        color: $white;
+        font-size: 16px;
+        left: 15px;
+        position: absolute;
+        top: 15px;
+        z-index: 1;
+        span {
+          color: $orange;
+          margin-left: 2px;
+        }
+      }
+      .error {
+        bottom: 10px;
+        color: $red;
+        font-size: 12px;
+        font-weight: $font-medium;
+        right: 15px;
+        position: absolute;
+
+        &.moveToBottom {
+          bottom: -20px;
+        }
+      }
+      .react-datepicker-wrapper {
+        width: 100%;
+      }
+      &.buttons {
+        @include for-tablet-landscape-up {
+          max-width: 100%;
+          display: flex;
+          justify-content: flex-end;
+        }
+        button {
+          min-width: unset;
+          width: 100%;
+          &:first-of-type {
+            margin-bottom: 20px;
+          }
+          @include for-tablet-landscape-up {
+            max-width: 150px;
+            &:first-of-type {
+              margin-bottom: 0;
+              margin-right: 20px;
+            }
+            &:last-of-type {
+              margin-bottom: 0;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      &.dropdown-selection {
+        .dropdown-selected {
+          background: $dark-gray-1;
+          display: inline-block;
+          border-radius: 10px;
+          font-size: 12px;
+          margin-right: 5px;
+          max-width: unset;
+          padding: 10px;
+          padding-right: 35px;
+          position: relative;
+          width: auto;
+          a {
+            color: $white !important;
+            font-size: 24px;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.noTitleDropdown {
+  .ant-select {
+    min-height: 45px !important;
+    padding-top: 10px !important;
+  }
+}
+
+.trialPeriod {
+  .ant-select.with_label {
+    margin-bottom: 0 !important;
+    padding-top: 8px !important;
+    position: relative;
+
+    &:before {
+      content: '';
+      height: 60%;
+      left: 0;
+      position: absolute;
+      background: $light-gray-2;
+      width: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.backgroundColor {
+  display: flex;
+  background: #242424;
+  border: none;
+  border-radius: 10px;
+  min-height: 40px;
+
+  .form__form--field input,
+  .Dropdown-root.form-input {
+    margin-bottom: 0 !important;
+    padding-top: 0;
+  }
+
+  .form__form--field input {
+    width: 70px;
+    min-height: unset;
+    height: 40px;
+  }
+
+  .Dropdown-root.form-input,
+  .ant-select.form-input {
+    height: 40px;
+    min-height: unset;
+    width: 120px !important;
+
+    .Dropdown-menu {
+      top: 40px;
+    }
+  }
+}
+
+.tag-selection {
+  max-height: 180px;
+  overflow: auto;
+}
+
+.dropdown-tags {
+  margin-top: -30px;
+}
+
+input[type='checkbox'].form-input--checkbox {
+  &:not(:checked),
+  &:checked {
+    + label {
+      color: $white;
+      &:before,
+      &:after {
+        border-radius: 0;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:after {
+        // background-image: url('../../../images/checkbox-tick.svg');
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+  &:not(:checked),
+  &:checked {
+    + label {
+      font-size: 16px;
+      font-weight: $font-medium;
+      display: block;
+      left: 0;
+      position: relative;
+      padding-left: 40px;
+      &:before,
+      &:after {
+        border-radius: 50%;
+        content: '';
+        height: 15px;
+        left: 0;
+        position: absolute;
+        width: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:before {
+        border: 3px solid $white;
+      }
+      &:after {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.4s $cubic-transition;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        border: 3px solid $koach-blue-primary;
+      }
+      &:after {
+        background-image: url('../../../images/checkbox-tick.svg');
+        background-color: $white;
+        background-size: 125%;
+        height: 15px !important;
+        width: 15px !important;
+        top: 0 !important;
+        left: 0;
+        border: 3px solid $koach-blue-primary;
+      }
+    }
+  }
+}
+
+input[type='radio'] {
+  display: none;
+  &:not(:checked),
+  &:checked {
+    + label {
+      margin-bottom: 10px !important;
+      &:before,
+      &:after {
+      }
+      &:before {
+        border: 2px solid $koach-blue-primary;
+      }
+      &:after {
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+      }
+      &:after {
+        background-color: $koach-blue-primary;
+        background-image: unset;
+        border-radius: 100%;
+        height: 3px !important;
+        width: 3px !important;
+        position: absolute;
+        top: 50% !important;
+        left: 5px !important;
+      }
+    }
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  // background: url('../../../images/svg-images/icon-search.svg') left 0.9vw center no-repeat;
+  // border: 1px solid $koach-blue-primary;
+  -webkit-text-fill-color: $white;
+  // -webkit-box-shadow: 0 0 0px 1000px rgba(35, 41, 47, 0.6) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type='date'] {
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+  // background: url('../../../images/svg-images/icon-calendar.svg');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: right;
+  // background: red;
+  width: 77%;
+}
+
+#preferreddate {
+  background-image: url('../../../images/svg-images/icon-calendar-white.svg');
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+  background-size: 3%;
+}
+
+.correct {
+  input[type='checkbox'] {
+    &:checked {
+      + label {
+        color: $green;
+        &:after {
+          background-image: url('../../../images/green-tick.svg');
+        }
+      }
+    }
+  }
+}
+
+.incorrect {
+  input[type='checkbox'] {
+    &:checked {
+      + label {
+        color: $red;
+        &:after {
+          background-image: url('../../../images/red-cross.svg');
+        }
+      }
+    }
+  }
+}
+
+.countTile {
+  color: $gray;
+  font-size: 14px;
+  font-weight: $font-normal;
+  max-width: 90px;
+}
+
+.count {
+  color: $koach-blue-primary;
+  font-size: 35px;
+  font-weight: $font-medium;
+}

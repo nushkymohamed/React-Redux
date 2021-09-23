@@ -1,0 +1,178 @@
+body.dark-mode {
+	.dark-icon {
+		display: block;
+	}
+
+	.light-icon {
+		display: none;
+	}
+}
+
+body.light-mode {
+	background: $backgroundgray;
+
+	.dark-icon {
+		display: none;
+	}
+
+	.light-icon {
+		display: block;
+	}
+
+	input[type=checkbox],
+	input[type=radio] {
+	  &:not(:checked),
+	  &:checked {
+	    + label {
+	      &:before {
+	        border-color: $lightorange;
+	      }
+	    }
+	  }
+
+	  &:checked {
+	    + label {
+	      &:after {
+	      	border-color: $lightorange;
+	      }
+	    }
+	  }
+	}
+
+	.banner-video:after {
+		content: none;
+	}
+
+	// All the font color changes
+	.player_section__info,
+	.player_section__duedate span,
+	.miniPlayer__info--title,
+	.featured-video__title p,
+	.footer__menu ul li a,
+	.footer__social-menu p {
+		color: $black;
+	}
+
+	.header {
+	    background: $black;
+	}
+
+	.btn--primary {
+		background: $lightorange;
+	}
+
+	.player_section {
+		background: none !important;
+
+		&:before,
+		&:after {
+			content: none;
+		}
+	}
+
+	.featured-video__title p span:before {
+	    background-image: url('../../../images/svg-images/reel-right-arrow-light.svg');
+	}
+
+	.player_section__controls svg {
+		fill: $lightorange;
+	}
+	ul.theatre__assessment-pagination {
+		// top: -4vh;
+
+		li {
+			background: $white;
+
+			&.active {
+				background: $lightorange;
+			}
+		}
+	}
+
+	.featured-video__item.zoomEffect:hover .miniPlayer__info-arrow {
+		position: relative;
+	    width: 100%;
+	    top: -20px;
+
+	    svg {
+    	    position: absolute;
+		    left: 0;
+		    top: 0;
+	    }
+	}
+
+	/* Theatre mode */
+	.theatre__info--item,
+	.theatre__controllers_title {
+		color: $black;
+	}
+
+	.theatre__controllers_play div svg {
+		fill: $lightorange;
+		stroke: $koach-blue-primary;
+	}
+
+	.theatre__controllers_volume .slidecontainer .slider::-webkit-slider-thumb {
+	    background: $lightorange;
+	}
+
+	.theatre__controllers_quality .svg svg {
+		color: $lightorange;
+	}
+
+	.theatre__info__message_item {
+		background: $koach-blue-primary;
+	}
+
+	/* Assessment */
+	.assessment__start--heading h2,
+	.assessment__start--context p,
+	.assessment__start--duration p,
+	.assessment__start--questions-count p,
+	.assessment__start--reel-tile p,
+	.assessment__question-column--number h4,
+	.assessment__question-column--question h3,
+	.assessment__question-column--answer label,
+	.assessment__questions--list h5,
+	.theatre__info_tab-title {
+		color: $black;
+	}
+
+	.theatre__info_tab-title.active {
+		color: $white;
+	}
+
+	.assessment__result--count h2 {
+		color: $white;
+	}
+
+	.assessment__question {
+		width: calc(100% + 3%);
+
+		&.selected {
+			background: $lightorange;
+
+			h5 {
+				color: $white;
+			}
+		}
+	}
+
+	.assessment__questions--list {
+		h5 {
+			color: $koach-blue-primary;
+		}
+	}
+
+	.assessment__questions-column {
+		background: rgba(47,52,61,.2);
+	}
+
+	.assessment__question {
+		// border-color: $koach-blue-primary;
+	}
+
+	.assessment .form--buttons .assessment--btn {
+		background: rgba(47,52,61,.2);
+	}
+}
